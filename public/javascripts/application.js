@@ -15,6 +15,10 @@ $(document).ready(function() {
 
     window.fbAsyncInit = function() { 
       FB.init({appId: options.fbAppId, status: true, cookie: true, xfbml: true}); 
+      FB.Canvas.setSize({height: $('.container').height()});
+      $('.container').resize(function() {
+        FB.Canvas.setSize({height: $(this).height()});
+      });
     }; 
 
     var e = document.createElement("script"); 

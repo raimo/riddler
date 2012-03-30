@@ -86,13 +86,13 @@ h1.msg {
 #container {
   margin: 0 auto;
   margin-top: 50px;
-  width: 650px;
+  overflow: auto;
 }
 
 
 .boxed_view {
   margin: 0 auto;
-  width: 600px;
+  width: 1200px;
   background-color: #ffffff;
   padding: 15px;
   border: 10px solid black;
